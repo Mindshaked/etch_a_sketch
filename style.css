@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'pixeledregular';
+    src: url('Font/pixeled-webfont.woff2') format('woff2'),
+         url('FOnt/pixeled-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: column;
+    height: 800px;
+    width: 800px;
+    background-color: lightblue;
+    background-image: url('Images/pixelbackground.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#webBody {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#canvas {
+    display: flex;
+    height: 352px;
+    width: 352px;
+    flex-wrap: wrap;
+    
+    
+}
+
+.gridBlocks {
+    
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid rgb(184, 184, 184);
+ 
+}
+
+
+.leftButtons {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    height: 352px;
+    width: 150px;
+    border: none;
+    justify-content: space-around;
+ 
+
+}
+
+#colorpicker {
+    width: 60px;
+    height: 30px;
+    margin: 15px;
+    align-self: center;
+}
+
+
+#webTitle{
+     font-family: 'pixeledregular';
+     align-self: center;
+     font-size: 50px;
+     color: rgb(224, 178, 230);
+     
+ }
+
+ #clearButton{
+     background-color: lightgoldenrodyellow;
+     font-family:'pixeledregular';
+     text-align: center;
+     padding: 5px;
+     align-self: center;
+     width: 80px;
+     height: 45px;
+     font-weight: bold;
+     border-color: mediumorchid;
+     border: solid 3px;
+   
+ }
+
+ .slidecontainer{
+     margin: 15px;
+     display: flex;
+     align-self: center;
+     justify-content: center;
+     flex-direction: column;
+ }
+
+
+ #myRange{
+     background-color: red;
+ }
+ 
+ #rangeNumbers{
+     align-self: center;
+     font-family:'pixeledregular';
+ }
