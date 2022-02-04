@@ -35,9 +35,11 @@ body{
 
 #canvas {
     display: flex;
-    height: 352px;
-    width: 352px;
     flex-wrap: wrap;
+    max-width: 352px;
+    max-height: 352px;
+    min-width: 352px;
+    min-height: 352px;
     
     
 }
@@ -45,12 +47,11 @@ body{
 .gridBlocks {
     
     background-color: white;
-    height: 20px;
-    width: 20px;
     margin: 0px;
     padding: 0px;
     border: 1px solid rgb(184, 184, 184);
- 
+    height: auto;
+    flex: 1;
 }
 
 
@@ -83,7 +84,7 @@ body{
  }
 
  #clearButton{
-     background-color: lightgoldenrodyellow;
+     background-color: rgb(252, 196, 252);
      font-family:'pixeledregular';
      text-align: center;
      padding: 5px;
@@ -91,12 +92,12 @@ body{
      width: 80px;
      height: 45px;
      font-weight: bold;
-     border-color: mediumorchid;
-     border: solid 3px;
+     
+     color: rgb(118, 65, 122);
    
  }
 
- .slidecontainer{
+.slidecontainer{
      margin: 15px;
      display: flex;
      align-self: center;
@@ -105,11 +106,12 @@ body{
  }
 
 
- #myRange{
+#myRange{
      background-color: red;
  }
- 
- #rangeNumbers{
+
+#rangeNumbers{
      align-self: center;
      font-family:'pixeledregular';
+     color: lightcyan;
  }
