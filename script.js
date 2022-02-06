@@ -1,9 +1,13 @@
 
 let canvas = document.querySelector('#canvas');
 
-let gridSize = 256;
+let gridSize = 575;
 
 let gridNumbers = document.getElementById('rangeNumbers');
+
+let noGridlines = document.getElementById('noBorder');
+
+let gridblocks = document.getElementsByClassName('gridBlocks');
 
 
 //loop to create the divs that make the canvas.
@@ -32,7 +36,7 @@ let twentyfour = document.getElementById('twentyfour');
 let thirty = document.getElementById('thirty');
 
 
-
+/*
 sixteen.addEventListener('click', function(e) {
    gridSize = 256;
    removeCanvas();
@@ -40,7 +44,7 @@ sixteen.addEventListener('click', function(e) {
 });
 
 twentyfour.addEventListener('click', function(e) {
-    gridSize = 576;
+    gridSize = 575;
     removeCanvas();
     createCanvas();
  });
@@ -50,7 +54,7 @@ twentyfour.addEventListener('click', function(e) {
     removeCanvas();
     createCanvas();
  });
-
+*/
 
 
 let pixelGrid = document.querySelectorAll('.gridBlocks')
@@ -60,7 +64,7 @@ let clearButton = document.getElementById('clearButton');
 
 // code to paint a cell.
 pixelGrid.forEach((pixel) => {
-    pixel.addEventListener('click', function(e)  {
+    pixel.addEventListener('mousedown', function(e)  {
         pixel.style.backgroundColor = colorPickerChoice.value;
     });
     
@@ -88,18 +92,19 @@ eraserButton.addEventListener('click', function(e) {
 
 
 //this removes the gridlines
-let noGridlines = document.getElementById('noBorder');
-let gridblocks = document.getElementsByClassName('gridBlocks');
+
 
 noGridlines.addEventListener('click', function(e) {
     if (gridblocks[1].style.border == "1px solid rgb(184, 184, 184)"){
         for (let i = 0; i < gridblocks.length; i++){
         gridblocks[i].style.border = "none";
+        gridblocks[i].style.padding = "1px";
         }
 
     } else {
         for (let i = 0; i < gridblocks.length; i++){
             gridblocks[i].style.border = "1px solid rgb(184, 184, 184)";
+            gridblocks[i].style.padding = "0px";
     }
     }
 });
