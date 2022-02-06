@@ -17,6 +17,13 @@ function createCanvas(){
         pixels.classList.add('gridBlocks')
         canvas.appendChild(pixels);
     }
+    let pixelGrid = document.querySelectorAll('.gridBlocks')
+    pixelGrid.forEach((pixel) => {
+        pixel.addEventListener('mousedown', function(e)  {
+            pixel.style.backgroundColor = colorPickerChoice.value;
+        });
+        
+    });
 }
 
 createCanvas(gridSize);
