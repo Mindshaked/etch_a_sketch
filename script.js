@@ -17,9 +17,9 @@ function createCanvas(){
         pixels.classList.add('gridBlocks')
         canvas.appendChild(pixels);
     }
-    }
+}
 
-    createCanvas(gridSize);
+createCanvas(gridSize);
 
 //function to remove the canvas before creating a new one.
 function removeCanvas(){
@@ -36,25 +36,34 @@ let twentyfour = document.getElementById('twentyfour');
 let thirty = document.getElementById('thirty');
 
 
-/*
+
 sixteen.addEventListener('click', function(e) {
    gridSize = 256;
    removeCanvas();
    createCanvas();
+   for (let i = 0; i < gridblocks.length; i++){
+    gridblocks[i].style.flexBasis = "20px"
+ }
 });
 
 twentyfour.addEventListener('click', function(e) {
     gridSize = 575;
     removeCanvas();
     createCanvas();
+    for (let i = 0; i < gridblocks.length; i++){
+        gridblocks[i].style.flexBasis = "12px"
+     }
  });
 
- thirty.addEventListener('click', function(e) {
-    gridSize = 900;
+thirty.addEventListener('click', function(e) {
+    gridSize = 899;
     removeCanvas();
     createCanvas();
+    for (let i = 0; i < gridblocks.length; i++){
+        gridblocks[i].style.flexBasis = "10px"
+     }
  });
-*/
+
 
 
 let pixelGrid = document.querySelectorAll('.gridBlocks')

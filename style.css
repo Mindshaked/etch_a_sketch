@@ -34,13 +34,14 @@ body{
 }
 
 #canvas {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     max-width: 352px;
     max-height: 352px;
     min-width: 352px;
     min-height: 352px;
     align-content: stretch;
+   
     
 }
 
@@ -95,9 +96,10 @@ body{
      padding: 5px;
      align-self: center;
      width: 80px;
-     height: 45px;
+     height: 40px;
      font-weight: bold;
      font-size: 11px;
+     border-color: white;
      
      color: rgb(118, 65, 122);
    
@@ -120,9 +122,10 @@ body{
     padding: 5px;
     align-self: center;
     width: 80px;
-    height: 45px;
+    height: 40px;
     font-weight: bold;
     font-size: 10px;
+    border-color: white;
     
     color: rgb(118, 65, 122);
   
@@ -135,9 +138,10 @@ body{
     padding: 5px;
     align-self: center;
     width: 80px;
-    height: 45px;
+    height: 40px;
     font-weight: bold;
     font-size: 8px;
+    border-color: white;
     
     color: rgb(118, 65, 122);
   
@@ -157,6 +161,7 @@ body{
     height: 45px;
     font-weight: bold;
     font-size: 8px;
+    border-color: white;
     
     color: rgb(118, 65, 122);
 
@@ -172,6 +177,7 @@ body{
     height: 45px;
     font-weight: bold;
     font-size: 8px;
+    border-color: white;
     
     color: rgb(118, 65, 122);
 
@@ -187,6 +193,7 @@ body{
     height: 45px;
     font-weight: bold;
     font-size: 8px;
+    border-color: white;
     
     color: rgb(118, 65, 122);
 
