@@ -1,8 +1,6 @@
 
 let canvas = document.querySelector('#canvas');
 
-let gridChanger = document.getElementById(`myRange`);
-
 let gridSize = 256;
 
 let gridNumbers = document.getElementById('rangeNumbers');
@@ -19,7 +17,7 @@ function createCanvas(){
 
     createCanvas(gridSize);
 
-//function to removethe canvas before creating a new one.
+//function to remove the canvas before creating a new one.
 function removeCanvas(){
     while (canvas.firstChild)
         canvas.firstChild.remove();
@@ -27,15 +25,31 @@ function removeCanvas(){
     }
 
 
+// This change the size of the grid
 
-// This change the value of the slider
-gridChanger.addEventListener('input', function(e) {
-   this.setAttribute('value',this.value);
-   gridNumbers.textContent = gridChanger.value + " x " + gridChanger.value;
-   gridSize = gridChanger.value * gridChanger.value;
+let sixteen = document.getElementById('sixteen');
+let twentyfour = document.getElementById('twentyfour');
+let thirty = document.getElementById('thirty');
+
+
+
+sixteen.addEventListener('click', function(e) {
+   gridSize = 256;
    removeCanvas();
    createCanvas();
 });
+
+twentyfour.addEventListener('click', function(e) {
+    gridSize = 576;
+    removeCanvas();
+    createCanvas();
+ });
+
+ thirty.addEventListener('click', function(e) {
+    gridSize = 900;
+    removeCanvas();
+    createCanvas();
+ });
 
 
 
@@ -61,6 +75,33 @@ clearButton.addEventListener('click', function(e) {
         pixelGrid[i].style.backgroundColor = whiteColor;
     }
       
+});
+
+
+//eraser button
+let eraserButton = document.getElementById('eraser');
+
+eraserButton.addEventListener('click', function(e) {
+    colorPickerChoice.value = '#ffffff';
+});
+
+
+
+//this removes the gridlines
+let noGridlines = document.getElementById('noBorder');
+let gridblocks = document.getElementsByClassName('gridBlocks');
+
+noGridlines.addEventListener('click', function(e) {
+    if (gridblocks[1].style.border == "1px solid rgb(184, 184, 184)"){
+        for (let i = 0; i < gridblocks.length; i++){
+        gridblocks[i].style.border = "none";
+        }
+
+    } else {
+        for (let i = 0; i < gridblocks.length; i++){
+            gridblocks[i].style.border = "1px solid rgb(184, 184, 184)";
+    }
+    }
 });
 
 
