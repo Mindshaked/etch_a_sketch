@@ -40,7 +40,7 @@ body{
     max-height: 352px;
     min-width: 352px;
     min-height: 352px;
-    
+    align-content: stretch;
     
 }
 
@@ -51,14 +51,15 @@ body{
     padding: 0px;
     border: 1px solid rgb(184, 184, 184);
     height: auto;
-    flex: 1;
+    width: auto;
+    flex: 1 1 20px;
 }
 
 
 .leftButtons {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 30px;
     height: 352px;
     width: 150px;
     border: none;
@@ -70,7 +71,7 @@ body{
 #colorpicker {
     width: 60px;
     height: 30px;
-    margin: 15px;
+    margin: 5px;
     align-self: center;
 }
 
@@ -92,6 +93,7 @@ body{
      width: 80px;
      height: 45px;
      font-weight: bold;
+     font-size: 11px;
      
      color: rgb(118, 65, 122);
    
@@ -106,12 +108,82 @@ body{
  }
 
 
-#myRange{
-     background-color: red;
- }
 
-#rangeNumbers{
-     align-self: center;
-     font-family:'pixeledregular';
-     color: lightcyan;
- }
+#eraser{
+    background-color: rgb(252, 196, 252);
+    font-family:'pixeledregular';
+    text-align: center;
+    padding: 5px;
+    align-self: center;
+    width: 80px;
+    height: 45px;
+    font-weight: bold;
+    font-size: 10px;
+    
+    color: rgb(118, 65, 122);
+  
+}
+
+#noBorder{
+    background-color: rgb(252, 196, 252);
+    font-family:'pixeledregular';
+    text-align: center;
+    padding: 5px;
+    align-self: center;
+    width: 80px;
+    height: 45px;
+    font-weight: bold;
+    font-size: 8px;
+    
+    color: rgb(118, 65, 122);
+  
+}
+
+.changeSizes{
+    display: flex;
+}
+
+#sixteen{
+    background-color: rgb(252, 196, 252);
+    font-family:'pixeledregular';
+    text-align: center;
+    padding: 5px;
+    align-self: center;
+    width: 80px;
+    height: 45px;
+    font-weight: bold;
+    font-size: 8px;
+    
+    color: rgb(118, 65, 122);
+
+}
+
+#twentyfour{
+    background-color: rgb(252, 196, 252);
+    font-family:'pixeledregular';
+    text-align: center;
+    padding: 5px;
+    align-self: center;
+    width: 80px;
+    height: 45px;
+    font-weight: bold;
+    font-size: 8px;
+    
+    color: rgb(118, 65, 122);
+
+}
+
+#thirty{
+    background-color: rgb(252, 196, 252);
+    font-family:'pixeledregular';
+    text-align: center;
+    padding: 5px;
+    align-self: center;
+    width: 80px;
+    height: 45px;
+    font-weight: bold;
+    font-size: 8px;
+    
+    color: rgb(118, 65, 122);
+
+}
